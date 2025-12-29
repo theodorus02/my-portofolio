@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Karya | Portofolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">NEZA.</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#karya">Karya</a></li>
+    <li><a href="#tentang">Tentang</a></li>
+    <li><a href="#kontak" class="btn">Kontak</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1>Karya Digital<br><span>Modern & Profesional</span></h1>
+  <p>Kumpulan karya terbaik yang saya buat dengan sepenuh hati</p>
+  <a href="#karya" class="btn besar">Lihat Karya</a>
+</section>
+
+<!-- KARYA -->
+<section class="karya" id="karya">
+  <h2>Karya Pilihan</h2>
+
+  <div class="grid">
+    <div class="card reveal">
+      <img src="https://picsum.photos/400/300?1">
+      <h3>Website UMKM</h3>
+      <p>Website modern dengan WhatsApp & animasi</p>
+      <button onclick="openDemo('https://theodorus02.github.io/UMKM/')">Lihat Demo</button>
+    </div>
+
+    <div class="card reveal">
+      <img src="https://picsum.photos/400/300?2">
+      <h3>Website Bisnis</h3>
+      <p>Tampilan profesional & elegan</p>
+      <button onclick="openDemo('https://theodorus02.github.io/website-jualan/')">Lihat Demo</button>
+    </div>
+
+    <div class="card reveal">
+      <img src="https://picsum.photos/400/300?3">
+      <h3>Landing Page</h3>
+      <p>Landing page cepat & conversion ready</p>
+      <button onclick="openDemo('landing page/index.html')">
+        Lihat Demo
+      </button>
+      
+    </div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section class="tentang" id="tentang">
+  <h2>Tentang Saya</h2>
+  <p>
+    Saya adalah web developer yang fokus pada pembuatan website modern,
+    cepat, dan mudah digunakan. Setiap karya dibuat dengan standar profesional.
+  </p>
+</section>
+
+<!-- KONTAK -->
+<section class="kontak" id="kontak">
+  <h2>Kerja Sama?</h2>
+  <p>Hubungi saya langsung via WhatsApp</p>
+  <a href="https://wa.me/6281377033153" class="btn besar">Chat WhatsApp</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Karya Digital • Dibuat oleh Theo
+</footer>
+
+<!-- MODAL DEMO -->
+<div id="demoModal" class="demo-modal">
+  <div class="demo-content">
+    <span class="close" onclick="closeDemo()">×</span>
+    <iframe id="demoFrame"></iframe>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
